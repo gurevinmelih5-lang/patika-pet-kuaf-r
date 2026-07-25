@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 120 12% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 12% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 12% 12%;
+
+    --primary: 120 16% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 18% 97%;
+    --secondary-foreground: 120 12% 12%;
+
+    --muted: 120 10% 96%;
+    --muted-foreground: 120 8% 45%;
+
+    --accent: 120 20% 92%;
+    --accent-foreground: 120 18% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 15% 90%;
+    --input: 120 15% 90%;
+    --ring: 120 16% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom pet grooming tokens */
+    --green-light: 120 18% 97%;
+    --green-medium: 120 16% 50%;
+    --green-dark: 120 18% 30%;
+    --pure-black: 0 0% 0%;
+    --pure-white: 0 0% 100%;
+    --soft-white: 0 0% 98%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(120 16% 50%) 0%, hsl(120 14% 60%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(120 18% 98%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(120 16% 50% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(120 16% 50% / 0.12);
+    --shadow-lg: 0 16px 48px -16px hsl(120 16% 50% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 120 12% 12%;
+    --sidebar-primary: 120 16% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 18% 97%;
+    --sidebar-accent-foreground: 120 12% 12%;
+    --sidebar-border: 120 15% 90%;
+    --sidebar-ring: 120 16% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
