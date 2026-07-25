@@ -17,7 +17,7 @@ const stats = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
@@ -26,13 +26,13 @@ const About = () => {
               <img
                 src="/images/kedi_tarama/WhatsApp Image 2026-07-23 at 19.34.53.jpeg"
                 alt="Patika Pet Kuaför Kedi Tarama & Deshedding Bakımı"
-                className="w-full h-[550px] object-cover"
+                className="w-full h-[320px] sm:h-[450px] md:h-[550px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-xl border border-border max-w-xs">
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-card p-4 sm:p-6 rounded-2xl shadow-xl border border-border max-w-[200px] sm:max-w-xs">
               <div className="flex items-center gap-4 mb-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <span className="text-2xl">🐾</span>
@@ -89,15 +89,15 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-8 border-t border-border">
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col gap-2">
-                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
-                    <stat.icon className="w-6 h-6 text-primary" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary/10 flex items-center justify-center">
+                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-xl md:text-2xl font-display font-bold text-foreground leading-none mb-1">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground font-medium font-sans">{stat.label}</div>
+                    <div className="text-base sm:text-xl md:text-2xl font-display font-bold text-foreground leading-none mb-1">{stat.value}</div>
+                    <div className="text-[10px] sm:text-xs text-muted-foreground font-medium font-sans">{stat.label}</div>
                   </div>
                 </div>
               ))}

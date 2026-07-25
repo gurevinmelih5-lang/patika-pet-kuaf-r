@@ -31,7 +31,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section id="faq" className="py-24 bg-background relative overflow-hidden">
+    <section id="faq" className="py-16 md:py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-3xl">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

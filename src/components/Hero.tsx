@@ -52,7 +52,7 @@ const Hero = () => {
 
             <motion.h1
               variants={itemVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 leading-tight"
             >
               Dostunuzun Mutluluğu ve
               <br />
@@ -86,19 +86,19 @@ const Hero = () => {
             {/* Stats */}
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-3 gap-6 md:gap-8 mt-12 pt-8 border-t border-border"
+              className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 mt-12 pt-8 border-t border-border"
             >
               <div>
-                <div className="text-2xl md:text-4xl font-display font-bold text-primary">500+</div>
-                <div className="text-muted-foreground text-xs md:text-sm font-medium font-sans">Mutlu Dostumuz</div>
+                <div className="text-xl sm:text-2xl md:text-4xl font-display font-bold text-primary">500+</div>
+                <div className="text-muted-foreground text-[10px] sm:text-xs md:text-sm font-medium font-sans">Mutlu Dostumuz</div>
               </div>
               <div>
-                <div className="text-2xl md:text-4xl font-display font-bold text-primary">%100</div>
-                <div className="text-muted-foreground text-xs md:text-sm font-medium font-sans">Hijyen & Güven</div>
+                <div className="text-xl sm:text-2xl md:text-4xl font-display font-bold text-primary">%100</div>
+                <div className="text-muted-foreground text-[10px] sm:text-xs md:text-sm font-medium font-sans">Hijyen & Güven</div>
               </div>
               <div>
-                <div className="text-2xl md:text-4xl font-display font-bold text-primary">MEB</div>
-                <div className="text-muted-foreground text-xs md:text-sm font-medium font-sans">Usta Öğretici</div>
+                <div className="text-xl sm:text-2xl md:text-4xl font-display font-bold text-primary">MEB</div>
+                <div className="text-muted-foreground text-[10px] sm:text-xs md:text-sm font-medium font-sans">Usta Öğretici</div>
               </div>
             </motion.div>
           </motion.div>

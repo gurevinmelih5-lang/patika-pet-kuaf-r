@@ -42,7 +42,7 @@ const instagramPosts = [
 
 const SocialIntegrations = () => {
   return (
-    <section className="py-24 bg-background overflow-hidden">
+    <section className="py-16 md:py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Instagram Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
