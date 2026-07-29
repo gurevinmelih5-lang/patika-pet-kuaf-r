@@ -1,0 +1,21 @@
+{
+  "short_name": "Patika Pet",
+  "name": "Patika Pet Kuaför Balıkesir",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#4CAF50",
+  "description": "Balıkesir Altıeylül'de profesyonel kedi ve köpek tıraşı, banyo ve detaylı bakım hizmetleri."
+}
