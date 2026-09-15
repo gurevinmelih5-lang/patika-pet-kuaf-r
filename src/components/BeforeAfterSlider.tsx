@@ -139,7 +139,7 @@ const BeforeAfterSlider = () => {
   }, [isDragging]);
 
   return (
-    <section id="gallery" className="py-16 md:py-24 bg-background relative overflow-hidden">
+    <section id="gallery" className="py-24 bg-background relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -163,7 +163,7 @@ const BeforeAfterSlider = () => {
         <div className="max-w-4xl mx-auto">
           <div
             ref={containerRef}
-            className="relative overflow-hidden w-full aspect-[4/3] md:aspect-[16/10] rounded-3xl border border-border shadow-2xl select-none cursor-ew-resize bg-secondary"
+            className="relative overflow-hidden w-full aspect-[16/10] rounded-3xl border border-border shadow-2xl select-none cursor-ew-resize bg-secondary"
             onMouseDown={(e) => {
               e.preventDefault();
               setIsDragging(true);
